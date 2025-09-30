@@ -1,0 +1,120 @@
+:root {
+  --accent: #9a1667;
+  --light: #f6f9fc;
+  --muted-border: #d0d7df;
+}
+
+body {
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: #222;
+  line-height: 1.4;
+}
+
+#table-heading {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.grades-table {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.grades-table th {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px;
+  border: 1px solid var(--muted-border);
+  text-align: center;
+}
+
+.grades-table td {
+  padding: 10px;
+  border: 1px solid var(--muted-border);
+  text-align: center;
+}
+
+.grades-table tbody tr:nth-child(even) {
+  background: #f8fbff;
+}
+
+.grades-table tbody tr.highlight-row {
+  background: var(--highlight);
+}
+
+.form-container {
+  width: 100%;
+  max-width: 420px;        
+  margin: 0 auto;           
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.input-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid var(--muted-border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 12px 0 8px;
+}
+
+fieldset label {
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: 400;
+}
+
+textarea.input-field {
+  resize: vertical;
+}
+
+.submit-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.submit-btn:hover {
+  background: #9a1667;
+}
+
+@media (max-width: 520px) {
+  body { margin: 12px; }
+  .grades-table, .form-container { max-width: 100%; }
+}
